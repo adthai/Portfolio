@@ -62,16 +62,6 @@ export const textVariant = (delay) => ({
   },
 });
 
-export const textContainer = {
-  hidden: {
-    opacity: 0,
-  },
-  show: (i = 1) => ({
-    opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
-  }),
-};
-
 export const textVariant2 = {
   hidden: {
     opacity: 0,
@@ -102,22 +92,6 @@ export const fadeIn = (direction, type, delay, duration) => ({
       delay,
       duration,
       ease: "easeOut",
-    },
-  },
-});
-
-export const planetVariants = (direction) => ({
-  hidden: {
-    x: direction === "left" ? "-100%" : "100%",
-    rotate: 120,
-  },
-  show: {
-    x: 0,
-    rotate: 0,
-    transition: {
-      type: "spring",
-      duration: 1.8,
-      delay: 0.5,
     },
   },
 });
@@ -160,21 +134,6 @@ export const footerVariants = {
   },
 };
 
-export const draw = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i) => {
-    const delay = 1.5;
-    return {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        pathLength: { delay, type: "spring", duration: 5, bounce: 0 },
-        opacity: { delay, duration: 0.01 },
-      },
-    };
-  },
-};
-
 export const staggerChildren = {
   hidden: { opacity: 0 },
   show: {
@@ -185,14 +144,9 @@ export const staggerChildren = {
   },
 };
 
-export const listItem = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 },
-};
 
 export const getMenuStyles = (menuOpened) => {
   if (document.documentElement.clientWidth <= 640) {
-    console.log("outside of sidebar reached")
     return { right: !menuOpened && "-100%" };
   }
 };

@@ -38,7 +38,7 @@ export const workExp = [
     place: "Husky Coding Project, Seattle, Washington",
     tenure: "Jan 2023 - Present",
     role: "Full-stack Developer",
-    detail: "Developing a project called 'Snoozer', supporting high school and college students with different ways to wake up with motivation. Implementing additional features to reduce bugs within the full-stack development using Agile methodologies. Collaborating with a group of 5 to prototype a backend system to enhance human-computer interaction.",
+    detail: "Developing a project called 'Snoozer', supporting high school and college students with different ways to wake up with motivation. Implementing additional features to reduce bugs within the full-stack development using Agile methodologies. Collaborating with a group of 5 to prototype a backend system to enhance human-computer interaction. Leveraging efficiency of the code by adding features using the Flask framework.",
 
   },
   {
@@ -46,72 +46,6 @@ export const workExp = [
     tenure: "Mar 2022 - Sep 2022",
     role: "Web Development Intern",
     detail: "Developed a sound understanding of relevant technologies to help create software applications, ultimately to serve underrepresented communities. Cooperated with other developers to ensure the effective implementation of the technical designs into the resulting software produced. Performed entry-level analysis, problem-solving, implementation, and documentation. Provided technical support to users.",
-  },
-];
-
-export const comments = [
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
   },
 ];
 

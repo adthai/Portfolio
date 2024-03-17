@@ -2,7 +2,10 @@ import Expertise from './components/expertise/expertise';
 import Header from './components/Header/Header';
 import Hero from './components/hero/Hero';
 import Work from './components/Work/Work';
+import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 import css from './styles/App.module.scss';
+import React from 'react';
 
 const App = () => {
   //don't forget to add font link in index.html
@@ -11,7 +14,8 @@ const App = () => {
     <Hero/>
     <Expertise/>
     <Work/>
-
+    <Projects/>
+    <Footer/>
   </div>
 };
 
