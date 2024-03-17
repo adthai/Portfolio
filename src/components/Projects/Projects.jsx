@@ -25,9 +25,9 @@ const Portfolio = () => {
 
         <div className={`flexCenter ${css.showCase}`}>
             <a href="https://github.com/UWSocialComputing/swapify/blob/main/">
-              <motion.img variants={fadeIn("up", "tween", .5, .6)} src="../public/logo.png" alt="project" />
+              <motion.img variants={fadeIn("up", "tween", .5, .6)} src="/logo.png" alt="project" />
             </a>
-            <motion.img variants={fadeIn("up", "tween", .7, .6)} src="../public/showCase2.png" alt="project" />
+            {/* <motion.img variants={fadeIn("up", "tween", .7, .6)} src="/showCase2.png" alt="project" /> */}
         </div>
       </div>
     </motion.section>

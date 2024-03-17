@@ -24,7 +24,7 @@ const Hero = () => {
 
         {/* image */}
         <motion.div variants={fadeIn("up", "tween", 0.3, 1)} className={css.person}>
-          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src= "../../../public/splash.png" alt=""/>
+          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src= "/splash.png" alt=""/>
         </motion.div>
 
 
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
           </motion.div>
           <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className = {css.certificate}>
-            <img src="../../public/certificate.png" alt=""/>
+            <img src="/certificate.png" alt=""/>
             <span>Student at the University of Washington</span>
           </motion.div>
         </div>
