@@ -1,6 +1,6 @@
 import React from "react";
 import {fadeIn, slideIn, staggerContainer} from "../../utils/motion.js";
-import css from './Hero.module.scss';
+import css from './Intro.module.scss';
 import {motion} from "framer-motion";
 
 const Hero = () => {
@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
 
         {/* image */}
-        <motion.div variants={fadeIn("up", "tween", 0.3, 1)} className={css.person}>
+        <motion.div variants={fadeIn("up", "tween", 0.3, 1)} className={css.splash}>
           <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src= "/splash.png" alt=""/>
         </motion.div>
 
@@ -33,13 +33,13 @@ const Hero = () => {
           <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className = {css.experience}>
             <div className="primaryText">2</div>
             <div className="secondaryText">
-              <div>Years of </div>
+              <div>Years of Work</div>
               <div>Experience</div>
             </div>
           </motion.div>
           <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className = {css.certificate}>
             <img src="/certificate.png" alt=""/>
-            <span>Student at the University of Washington</span>
+            <span>Senior at the University of Washington</span>
           </motion.div>
         </div>
       </div>

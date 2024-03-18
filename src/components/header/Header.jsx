@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import css from "./Header.module.scss";
-import { BiPhoneCall, BiMailSend } from "react-icons/bi";
-import{SocialIcon} from 'react-social-icons'
+import { BiPhoneCall, BiMailSend, BiMenuAltRight } from "react-icons/bi";
+import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
@@ -12,12 +12,14 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
 
-
-  //to handle click outside of sidebar on mobile
   useOutsideAlerter({
-    menuRef,
-    setMenuOpened,
+    ref: menuRef,
+    action: () => setMenuOpened(false),
   });
+
+  const toggleMenu = () => {
+    setMenuOpened(prevState => !prevState);
+  };
 
   return (
     <motion.div
@@ -26,10 +28,10 @@ const Header = () => {
       whileInView="show"
       className={`bg-primary paddings ${css.wrapper}`}
       viewport={{ once: true, amount: 0.25 }}
-      style={{boxShadow: headerShadow}}
+      style={{ boxShadow: headerShadow }}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-        <div className={css.name}>Andy</div>
+        <div className={css.name}>Andy Thai</div>
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
@@ -41,14 +43,17 @@ const Header = () => {
           <li>
             <SocialIcon network="linkedin" url="https://www.linkedin.com/in/adthai01" />
           </li>
-
           <li><SocialIcon network="github" url="https://www.github.com/adthai"/> </li>
           <li className={`flexCenter ${css.phone}`}>
-            <a href="tel:+1206-427-7175"><BiPhoneCall size={"55px"} /></a></li>
+            <a href="tel:+1206-427-7175"><BiPhoneCall size={"55px"} /></a>
+          </li>
           <li className={`flexCenter ${css.phone}`}>
-            <a href="mailto:adthai.me@gmail.com"><BiMailSend size={"55px"} /></a></li>
+            <a href="mailto:adthai.me@gmail.com"><BiMailSend size={"55px"} /></a>
+          </li>
         </ul>
-
+        <div className={css.menuIcon} onClick={toggleMenu}>
+          <BiMenuAltRight size={30} />
+        </div>
       </div>
     </motion.div>
   );

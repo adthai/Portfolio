@@ -1,6 +1,9 @@
 @import '../../styles/constants.scss';
 
 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:beige;
     .container {
         flex-direction: column;
         gap: 2rem;

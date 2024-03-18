@@ -1,6 +1,6 @@
 import Expertise from './components/expertise/expertise';
 import Header from './components/Header/Header';
-import Hero from './components/hero/Hero';
+import Hero from './components/intro/Intro';
 import Work from './components/Work/Work';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';

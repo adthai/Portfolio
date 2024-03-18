@@ -20,17 +20,13 @@ const Footer = () => {
           <span className="primaryText">
             Please reach out!
           </span>
-          <span className="primaryText">
-            Email: <a href="mailto:adthai.me@gmail.com">adthai.me@gmail.com</a><br/>
-            Phone: <a href="tel:+1206-427-7175">+1 (206) 427-7175</a>
+          <span className="secondaryText">
+            <b>Email: </b><a href="mailto:adthai.me@gmail.com">adthai.me@gmail.com</a><br/>
+            <b>Phone: </b><a href="tel:+1206-427-7175">+1 (206) 427-7175</a>
           </span>
         </div>
 
         <div className={css.right}>
-          {/* <div className={css.info}>
-            <span className="secondaryText">Information</span>
-            <p>Seattle, WA, USA</p>
-          </div> */}
           <ul className={css.menu}>
             <li><a href="#expertise">About Me</a></li>
             <li><a href="#work">Experience</a></li>
