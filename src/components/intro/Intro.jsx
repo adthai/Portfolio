@@ -3,7 +3,7 @@ import {fadeIn, slideIn, staggerContainer} from "../../utils/motion.js";
 import css from './Intro.module.scss';
 import {motion} from "framer-motion";
 
-const Hero = () => {
+const Intro = () => {
   return(
     <section className={`paddings ${css.wrapper}`}>
       <motion.div
@@ -47,4 +47,4 @@ const Hero = () => {
     </section>
   )};
 
-export default Hero
+export default Intro
