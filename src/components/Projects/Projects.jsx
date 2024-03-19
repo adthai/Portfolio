@@ -24,10 +24,12 @@ const Portfolio = () => {
 
 
         <div className={`flexCenter ${css.showCase}`}>
-            <a href="https://github.com/UWSocialComputing/swapify/blob/main/">
-              <motion.img variants={fadeIn("up", "tween", .5, .6)} src="/logo.png" alt="project" />
-            </a>
-            {/* <motion.img variants={fadeIn("up", "tween", .7, .6)} src="/showCase2.png" alt="project" /> */}
+          <a href="https://github.com/adthai/Beanie-Website">
+          <motion.img variants={fadeIn("up", "tween", .5, .6)} src="./beanie_bazaar.png" alt="project" />
+          </a>
+          <a href="https://github.com/UWSocialComputing/Swapify-code">
+          <motion.img variants={fadeIn("up", "tween", .7, .6)} src="./logo.png" alt="project" />
+          </a>
         </div>
       </div>
     </motion.section>
