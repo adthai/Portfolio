@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './expertise.module.scss';
-import { projectExperience, WhatDoIHelp } from '../../utils/data'
+import { projectExperience, WhatDoIHelp, furtherInfo } from '../../utils/data'
 import {motion} from 'framer-motion'
 import {fadeIn, staggerContainer, textVariant} from '../../utils/motion.js';
 
@@ -28,7 +28,7 @@ const Expertise = () => {
                     {exp.name}
                   </span>
                   <span class="secondaryText">
-                    {exp.projects} Projects
+                    {exp.projects}
                   </span>
                 </div>
               </motion.div>
@@ -40,8 +40,18 @@ const Expertise = () => {
         variants={textVariant(0.5)}
         className={css.rightSide}>
           <span className="primaryText"> Expertise: </span>
+          <br/>
           {
             WhatDoIHelp.map((paragraph, i) => {
+              return (
+                <span className="secondaryText" key={i}>{paragraph}</span>
+              )
+            })
+          }
+          <br/>
+          <br/>
+          {
+            furtherInfo.map((paragraph, i) => {
               return (
                 <span className="secondaryText" key={i}>{paragraph}</span>
               )

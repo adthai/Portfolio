@@ -15,7 +15,7 @@ const Work = () => {
 
       <div className={`innerWidth flexCenter ${css.container}`}>
         {/* heading */}
-        <span className="primaryText yPaddings">My Work Experience</span>
+        <span className="primaryText yPaddings">My Experience</span>
 
         <div className={`flexCenter ${css.experiences}`}>
           {workExp.map((exp, i) => {
@@ -23,6 +23,7 @@ const Work = () => {
               <motion.div variants={textVariant2} key={i} className={`flexCenter ${css.exp}`}>
                 <div className={css.post}>
                   <h1>{exp.place}</h1>
+                  <h4>{exp.location}</h4>
                   <p>{exp.tenure}</p>
                 </div>
                 <div className={css.role}>
